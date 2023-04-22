@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaplan"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/AdSoyad"
+        android:layout_width="323dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="156dp"
+        android:background="@color/gorseller"
+        android:ems="10"
+        android:hint="@string/editTxt"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColor="@color/purple_200"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtGoster"
+        android:layout_width="323dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/gorseller"
+        android:paddingTop="15dp"
+        android:text="@string/text1"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoster" />
+
+    <Button
+        android:id="@+id/btnGoster"
+        android:layout_width="323dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#FF0000"
+        android:hapticFeedbackEnabled="true"
+        android:text="@string/button1"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/AdSoyad"
+        app:layout_constraintStart_toStartOf="@+id/AdSoyad"
+        app:layout_constraintTop_toBottomOf="@+id/AdSoyad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
